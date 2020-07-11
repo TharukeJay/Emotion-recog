@@ -5,6 +5,12 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 28
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["androidManifestFile": "D:\\Emotions-recognition-android\\openCVLibrary310\\src\\main\\AndroidManifest.xml"]
+              }
+        }
     }
     buildTypes {
         release {

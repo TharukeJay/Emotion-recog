@@ -14,6 +14,11 @@ android {
                 cppFlags "-frtti -fexceptions"
             }
         }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["androidManifestFile": "D:\\Emotions-recognition-android\\app\\src\\main\\AndroidManifest.xml"]
+            }
+        }
     }
     aaptOptions {
         noCompress "tflite"
